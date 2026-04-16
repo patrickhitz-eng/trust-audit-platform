@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600&family=DM+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --ink: #1a1a1a; --ink2: #555; --ink3: #888; --ink4: #aaa;
+  --sf: #fff; --sf2: #f7f6f3; --sf3: #efeee9;
+  --ln: #e2e0da; --ln2: #d1cfc7;
+  --ac: #1a3a5c; --ac2: #e8eef4;
+  --gn: #2D6A4F; --gn2: #EDF5F0;
+  --am: #92710C; --am2: #FDF6E3;
+  --rd: #B83230; --rd2: #FEF0EF;
+  --bl: #1A5276; --bl2: #EBF5FB;
+  --r: 6px; --rl: 10px;
+  --f: 'DM Sans', system-ui, sans-serif;
+  --m: 'DM Mono', 'SF Mono', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8e6e1; --ink2: #a8a6a0; --ink3: #787672; --ink4: #5a5856;
+    --sf: #1c1c1a; --sf2: #242422; --sf3: #2c2c29;
+    --ln: #3a3936; --ln2: #4a4945;
+    --ac: #7aaed4; --ac2: #1e2d3a;
+    --gn: #5cb88a; --gn2: #1a2e24;
+    --am: #d4a843; --am2: #2a2418;
+    --rd: #e07070; --rd2: #2e1c1c;
+    --bl: #6aaedb; --bl2: #1a2a36;
+  }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.au { animation: fadeUp .35s ease both; }
+
+body {
+  font-family: var(--f);
+  color: var(--ink);
+  background: var(--sf2);
+  -webkit-font-smoothing: antialiased;
+}
